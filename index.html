@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order WebSite</title>
+    <link rel="stylesheet" href="indec.css">
+</head>
+<body>
+    <div class="nav">
+        <img onclick="menu()" src="menu_FILL0_wght400_GRAD0_opsz24.svg" alt="0" class="but" id="menu">
+        <div class="lists" id="lists">
+            <ul class="inner-list">
+                <li class="items item1"> 
+                   <p>Veg</p>
+                   <div class="arrow-hidden">
+                       <img src="chevron_right_FILL0_wght400_GRAD0_opsz24.svg" class="arrow-img">
+                   </div>
+                </li>
+                <li class="items item2">
+                    <p>Non-Veg</p>
+                    <div class="arrow-hidden">
+                        <img src="chevron_right_FILL0_wght400_GRAD0_opsz24.svg" class="arrow-img">
+                    </div>
+                </li>
+                <li class="items item3">
+                    <p>Catogry</p>
+                    <div class="arrow-hidden">
+                        <img src="chevron_right_FILL0_wght400_GRAD0_opsz24.svg" class="arrow-img">
+                    </div>
+                </li>
+                <li class="items item4" onclick="cont_page()">
+                    <p onclick="cont_page()">Contact</p>
+                    <div class="arrow-hidden">
+                        <img src="chevron_right_FILL0_wght400_GRAD0_opsz24.svg" class="arrow-img">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <p class="foodfirst-title">FoodFirst</p>
+        <div class="search-div" id="search-div">
+            <img src="search_FILL0_wght400_GRAD0_opsz24.svg" alt="0" onclick="search_open()" class="search-icon" id="search-icon">
+            <input type="text" placeholder="search food" class="search-fild" id="search-fild">
+            <img src="close_FILL0_wght400_GRAD0_opsz24.svg" alt="1" onclick="search_cls()" class="clear" id="clear">
+        </div>
+        <img src="./shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="cart" onclick="cart()" class="but" id="cart-but">
+        <img src="./account_circle_FILL0_wght400_GRAD0_opsz24.svg" onclick="account()" class="but" id="account-but">
+    </div>
+    <div class="offer-marquee">
+        <marquee>
+            <p class="mark-scroll">Exclusive Deals Going On.....!</p>
+        </marquee>
+    </div>
+    <div class="com-content">
+        <!-- menu section -->
+        <div class="popular" id="popular">
+            <p class="pop-title">Menu</p>
+            <div class="content-inner">
+                <div class="box idli"><img src="Idli-icon.avif" alt="" class="food-img">
+                    <div class="details" id="idli">
+                        <p class="price">Rs.<span id="idliprice">6</span></p>
+                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                        <button value="idli" onclick="cart_add(event)" name="0" class="cart-add" id="idliname">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="box dhosa"><img src="Dosa-icon.avif" alt="" class="food-img">
+                    <div class="details">
+                        <p class="price">Rs.<span id="dhosaprice">20</span></p>
+                        <p class="stars">⭐⭐⭐⭐</p>
+                        <button value="dhosa" onclick="cart_add(event)" name="0" class="cart-add" id="dhosaname">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="box poori"><img src="Poori-icon.avif" alt="" class="food-img">
+                    <div class="details">
+                        <p class="price">Rs.<span id="pooriprice">20</span></p>
+                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                        <button value="poori" onclick="cart_add(event)" name="0" class="cart-add" id="pooriname">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="box pongal"><img src="Pongal-icon.avif" alt="" class="food-img">
+                    <div class="details">
+                        <p class="price">Rs.<span id="pongalprice">40</span></p>
+                        <p class="stars">⭐⭐⭐</p>
+                        <button value="pongal" onclick="cart_add(event)" name="0" class="cart-add" id="pongalname">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="box paniyaram"><img src="Paniyaram-icon.avif" alt="" class="food-img">
+                    <div class="details">
+                        <p class="price">Rs.<span id="paniyaramprice">5</span></p>
+                        <p class="stars">⭐⭐⭐⭐</p>
+                        <button value="paniyaram" onclick="cart_add(event)" name="0" class="cart-add" id="paniyaramname">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="box parotta"><img src="Parotta-icon.avif" alt="" class="food-img">
+                    <div class="details">
+                        <p class="price">Rs.<span id="parottaprice">15</span></p>
+                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                        <button value="parotta" onclick="cart_add(event)" name="0" class="cart-add" id="parottaname">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="box uttapam"><img src="Uttapam-icon.avif" alt="" class="food-img">
+                    <div class="details">
+                        <p class="price">Rs.<span id="uttapamprice">25</span></p>
+                        <p class="stars">⭐⭐⭐⭐⭐</p>
+                        <button value="uttapam" onclick="cart_add(event)" name="0" class="cart-add" id="uttapamname">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="box appam"><img src="Appam-icon.avif" alt="" class="food-img">
+                    <div class="details">
+                        <p class="price">Rs.<span id="appamprice">20</span></p>
+                        <p class="stars">⭐⭐⭐</p>
+                        <button value="appam" onclick="cart_add(event)" name="0" class="cart-add" id="appamname">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cutom alert box -->
+        <div id="custom-alert" onclick="com()">
+            <div class="inner-cust-main" id="inner-cust-main">
+                <img src="close_FILL0_wght400_GRAD0_opsz24.svg" onclick="cust_alt()" class="cls-img-for-alert">
+                <p id="alert-msg" class="alert-msg">This Item Already Added in Cart!</p>
+            </div>
+        </div>
+        <!-- cart section -->
+        <div class="cart" id="cart">
+            <p class="cart-title">Cart</p>
+            <div class="inner-cart" id="inner-cart">
+                <div class="lists-of-items" id="lists-of-items">
+                    <!-- js function creation -->
+                    <div class="rem" id="rem">
+                        <img id="fd-remainder" src="/055-drawkit-fast-food-colour.png">
+                        <p class="txt" id="txt">No Items Selected!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Section -->
+        <div class="contact-outer" id="contact-outer">
+            <p class="con-title">Contact</p>
+            <div class="com-div-for-contact">
+                <div class="cont-num" onclick="mob_no()">
+                    <label class="li-lab">Contact Number: </label>
+                    <p class="con-num">+91 76038 57110</p>
+                </div>
+                <div class="email" onclick="email()">
+                    <label class="li-lab">Email: </label>
+                    <p class="email-off">navadeepakaswin007@gmail.com</p>
+                </div>
+                <div class="github-out">
+                    <a class="git" href="https://github.com/navadeepak">GitHub</a>
+                </div>
+                <div class="link-in">
+                    <a href="https://www.linkedin.com/in/navadeepak-c-7b35741b6/" class="linked">Linked In</a>
+                </div>
+            </div>
+            <p class="back-to-h" onclick="BTH()">Back To Home</p>
+        </div>
+    </div>
+    <script src="./js.js"></script>
+</body>
+</html>
